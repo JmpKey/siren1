@@ -226,7 +226,7 @@ void Client::extract_filename(const std::string& _full_path, char* _filename_buf
         strncpy(_filename_buffer, filename.c_str(), FILENAME_BUFFER_SIZE - 1);
         _filename_buffer[FILENAME_BUFFER_SIZE - 1] = '\0'; // Providing a null terminator
     } else {
-        // Если разделителей нет, просто копируем полный путь
+        // If there are no separators, just copy the full path
         strncpy(_filename_buffer, _full_path.c_str(), FILENAME_BUFFER_SIZE - 1);
         _filename_buffer[FILENAME_BUFFER_SIZE - 1] = '\0'; // Providing a null terminator
     }

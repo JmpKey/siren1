@@ -28,13 +28,13 @@ Windows: use qmake.
 
 2. Begin:
 ```
-$   cd siren1/<*>/build/template
+$   cd siren1/<?>/build/template
 $   mkdir build
 $   cd build
 $   cmake ..
 $   make
 ```
-* - is where to insert "sirenC" and "sirenS".
+? - is where to insert "sirenC" and "sirenS".
 
 # How to start
 1. Start demon Yggdrasil.
