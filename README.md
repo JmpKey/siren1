@@ -1,5 +1,5 @@
 # Siren1
-Direct Device-to-Device File Sharing
+Direct file sharing between devices on top of the Yggdrasil-Network
 
 # Important
 Working in a distributed network, play by its rules. Install the client and server on your device. Remember, a holistic node is when a device is able to transmit and receive.
@@ -19,8 +19,7 @@ How to patch this for FreeBSD?
 ```
 #   pkg install cmake
 ```
-Android:
-Use Termux.
+Android: use Termux.
 ```
 $   pkg install make clang cmake
 ```
@@ -37,11 +36,11 @@ $   make
 ? - is where to insert "sirenC" and "sirenS".
 
 # How to start
-1. Start demon Yggdrasil.
+1. Start demon [Yggdrasil](https://yggdrasil-network.github.io).
 2. You need to know the IPv6 address of the receiver and its port.
 ```
-$   ./sirenC <IPv6 adress> <port> <file1 file2>
 $   ./sirenS <port>
+$   ./sirenC <IPv6 adress> <port> <file1 file2>
 ```
 # Does it work without the Internet?
 Yes.
